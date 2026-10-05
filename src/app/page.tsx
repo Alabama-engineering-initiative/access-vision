@@ -70,31 +70,35 @@ export default function Home() {
           We collaborate with local schools, churches, and nonprofits to host
           our mobile clinics directly where the need is greatest.
         </p>
+
+        <h3 style={{ marginTop: "2rem", color: "var(--accent-teal)" }}>
+          Vision & Mission
+        </h3>
+        <p>
+          We envision a world where no one's quality of life is limited by preventable vision loss, regardless of their location or circumstances.
+        </p>
+        <p>
+          Our mission is to deliver high-quality, accessible, affordable eye care directly to underserved communities across Alabama.
+        </p>
       </section>
 
       <section id="mission">
-        <h2>Our Mission</h2>
-        <div style={{ background: "#e3f2fd", padding: "20px", borderLeft: "5px solid var(--primary-blue)", marginBottom: "2rem" }}>
-          <p><strong>Mission:</strong> To improve health outcomes by providing accessible eye care.</p>
-          <p><strong>Vision:</strong> A future where no individual experiences preventable vision loss due to lack of access.</p>
-        </div>
-
-        <h3>Core Services</h3>
+        <h3>Services</h3>
         <div className={styles.servicesGrid}>
           <div className={styles.serviceCard}>
             <div className={styles.serviceIcon}><Eye size={48} /></div>
             <h4>Comprehensive Exams</h4>
-            <p>Full medical eye examinations.</p>
+            <p>Full Medical Eye Examinations</p>
           </div>
           <div className={styles.serviceCard}>
             <div className={styles.serviceIcon}><Glasses size={48} /></div>
             <h4>Prescription Glasses</h4>
-            <p>Provided on-site or ordered for patients.</p>
+            <p>Including Single Vision, Bifocals, Progressive Lenses, and Sunglasses</p>
           </div>
           <div className={styles.serviceCard}>
             <div className={styles.serviceIcon}><Stethoscope size={48} /></div>
             <h4>Disease Detection</h4>
-            <p>Screening for Diabetes, Hypertension, and Glaucoma.</p>
+            <p>Screening for Diabetes, Cataracts, Glaucoma, and others (referrals for secondary care if necessary)</p>
           </div>
         </div>
       </section>
