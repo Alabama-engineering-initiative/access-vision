@@ -1,14 +1,8 @@
 [
   {
-    "name": "Jim Bob",
-    "picture": "/team/exTeamMember1.jpg",
-    "biography": "He is Jim Bob",
-    "role": "Lead something"
-  },
-  {
-    "name": "Alex Trebeck",
-    "picture": "/team/exTeamMember2.jpg",
-    "biography": "Host of the hit show jeapordy",
-    "role": "Host"
+    "name": "Dr. Kent Daum",
+    "picture": "/team/headshot_1.jpg",
+    "biography": "Kent Daum, O.D., Ph.D. is a licensed optometrist and the clinical lead for Access Vision’s Mobile Eye Clinic. He conducts all eye examinations as a volunteer, bringing decades of clinical and academic experience to communities across Alabama. Dr. Daum earned both his Doctor of Optometry and Ph.D. from Ohio State University and recently retired from the Mobile County Public Health Department. He has more than 10 years of hands-on experience as a mobile eye clinic optometrist, directly serving rural and underserved communities throughout the state. A Fellow of the American Academy of Optometry and a member of the American Optometric Association, Dr. Daum’s career has focused on expanding access to high-quality vision care to the vulnerable and underserved.",
+    "role": "Executive Director and Lead Optometrist"
   }
 ]
