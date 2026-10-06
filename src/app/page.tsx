@@ -27,7 +27,7 @@ export default function Home() {
         <div className={styles.posterFrame}>
           <div className={styles.posterPlaceholder}>
             <p><strong>Access Vision Outreach Flyer (PDF)</strong></p>
-            <h3><strong><br>Coming Soon</strong></h3>
+            <h3><strong><br />Coming Soon</strong></h3>
           </div>
 
           <p>
