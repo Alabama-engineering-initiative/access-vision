@@ -1,46 +1,6 @@
-.header {
-	background: linear-gradient(rgba(0, 51, 102, 0.95), rgba(0, 51, 102, 0.85));
-	color: var(--white);
-	text-align: center;
-	padding: 3rem 15px;
-	margin-bottom: 2rem;
-}
-
-.header h1 {
-	font-size: 2.5rem;
-	margin: 0;
-}
-
-.aboutInfo {
-	max-width: 1000px;
-    margin: 2rem auto;
-    padding: 3rem;
-    background: #ffffff;
-    
-    border-radius: 60px; 
-    
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-    
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.aboutInfo:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.4);
-}
-
-.aboutInfo h2 {
-	color: var(--primary-blue);
-	margin: 2rem 0 1rem;
-	border-bottom: 2px solid var(--accent-teal);
-	display: inline-block;
-}
-
-.aboutInfo p {
-	line-height: 1.8;
-	margin-bottom: 1.5rem;
-	white-space: pre-line;
-}
+.header { background: var(--primary-blue); color: white; padding: 4rem max(20px, calc((100vw - 960px) / 2)); }
+.header p { text-transform: uppercase; letter-spacing: .12em; font-weight: 700; font-size: .8rem; margin-bottom: 1rem; }
+.header h1 { font-family: Georgia, serif; font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1.1; max-width: 18ch; }
+.aboutInfo { max-width: 1000px; margin: auto; padding: 3rem 20px; }
+.aboutInfo p { max-width: 72ch; line-height: 1.8; margin-bottom: 1.25rem; }
+.aboutInfo h2 { font-family: Georgia, serif; font-size: 2rem; margin: 2rem 0 1rem; }

@@ -1,68 +1,24 @@
 .clinicSchedule {
-	background: var(--white);
-	padding: 2rem;
-	border-radius: 8px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	min-height: 150px;
-	border-radius: 15px; 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
+.intro { margin-bottom: 1.5rem; }
+.clinicList { list-style: none; padding: 0; margin: 1rem 0; }
 .clinicCard {
-	border: 2px solid #ddd;
-	padding: 1.5rem;
-	margin-bottom: 1rem;
-	border-left: 10px solid var(--primary-blue);
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	animation: fadeIn 0.5s ease-in;
-	border-radius: 15px; 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-left: 6px solid var(--primary-blue);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
 }
-
-.clinicInfo h3 {
-	margin-bottom: 0.5rem;
-	color: var(--primary-blue);
-}
-
-.status {
-	padding: 5px 10px;
-	border-radius: 4px;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 0.9rem;
-}
-
-.status.open {
-	background-color: #e8f5e9;
-	color: var(--success-green);
-	border: 1px solid var(--success-green);
-}
-
-.status.full {
-	background-color: #ffebee;
-	color: var(--alert-red);
-	border: 1px solid var(--alert-red);
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(10px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
+.clinicCard h4 { color: var(--primary-blue); margin: 0 0 0.25rem; }
+.clinicCard p { margin: 0; }
+.note { font-weight: 600; }
+.past { margin-top: 1.5rem; }
+.past summary { cursor: pointer; font-weight: 700; }
 @media (max-width: 768px) {
-	.clinicCard {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 10px;
-	}
+  .clinicSchedule { padding: 1.25rem; }
 }

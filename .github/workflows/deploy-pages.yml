@@ -31,8 +31,8 @@ jobs:
         run: pnpm run lint
       - name: Build static site
         run: pnpm run build
-      - name: Verify Pages paths
-        run: node --test tests/pages-export.test.mjs
+      - name: Test static site
+        run: node --test tests/*.test.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

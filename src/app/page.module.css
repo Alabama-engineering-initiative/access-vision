@@ -1,118 +1,29 @@
 .hero {
-	background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.8)), url('https://via.placeholder.com/1200x600/003366/ffffff?text=Eye+Care+Clinic');
-	background-size: cover;
-	background-position: center;
-	color: var(--white);
-	text-align: center;
-	padding: 4rem 20px;
-	width: 100%;
-	max-width: none;
-	margin: 0;
-	min-height: 50vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  background: #003366;
+  color: white;
+  width: 100%; max-width: none; margin: 0;
+  padding: clamp(3rem, 7vw, 6rem) 20px;
 }
-
-.hero h1 {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.hero p {
-	font-size: 1.5rem;
-	margin: 0;
-}
-
-.btn {
-	background-color: var(--warm-highlight);
-	color: var(--primary-blue);
-	padding: 15px 30px;
-	font-size: 1.2rem;
-	font-weight: bold;
-	text-decoration: none;
-	border-radius: 5px;
-	display: inline-block;
-	cursor: pointer;
-	border: none;
-	margin-top: 2rem;
-}
-
-.btn:hover {
-	background-color: #FFA726;
-}
-
-.quickInfo {
-	background-color: var(--accent-teal);
-	color: var(--white);
-	display: flex;
-	justify-content: center;
-	gap: 40px;
-	padding: 20px;
-	flex-wrap: wrap;
-	text-align: center;
-}
-
-.infoItem {
-	font-weight: bold;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-.posterFrame {
-	background-color: #e3e3e3;
-	border: 4px solid var(--primary-blue);
-	padding: 20px;
-	text-align: center;
-	margin: 3rem auto;
-	max-width: 600px;
-	max-height: 1000px;
-    border-radius: 30px; 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.posterPlaceholder {
-	background-color: var(--white);
-	height: 400px;
-	display: flex;
-	align-items: center; 
-	justify-content: center;
-	color: #777;
-	margin-bottom: 15px;
-}
-
-.servicesGrid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 20px;
-	margin-top: 2rem;
-}
-
-.serviceCard {
-	background: var(--white);
-	padding: 2rem;
-	text-align: center;
-	border-radius: 8px;
-	border: 1px solid #ddd;
-}
-
-.serviceIcon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-	color: var(--accent-teal);
-}
-
-.about {
-	background-color: white;
-	border-radius: 15px; 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-	.hero h1 {
-		font-size: 2rem;
-	}
-}
+.heroInner { max-width: 960px; margin: auto; }
+.hero h1 { font-family: Georgia, serif; font-size: clamp(2.7rem, 7vw, 5rem); line-height: 1.05; max-width: 14ch; margin: .5rem 0 1.25rem; }
+.hero p { max-width: 68ch; margin: 1rem 0; }
+.hero .lead { font-size: clamp(1.25rem, 3vw, 1.65rem); font-weight: 700; }
+.eyebrow, .sectionLabel { font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; }
+.actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+.btn, .secondaryBtn { display: inline-block; padding: .8rem 1.3rem; font-weight: 700; border-radius: 4px; text-decoration: none; }
+.btn, .btn:visited { background: var(--warm-highlight); color: #003366; }
+.secondaryBtn, .secondaryBtn:visited { border: 1px solid white; color: white; }
+.btn:hover, .secondaryBtn:hover { text-decoration: underline; }
+.quickInfo { background: var(--accent-teal); color: white; text-align: center; padding: 1.25rem 20px; font-weight: 700; }
+.contentSection, .clinicPhotos { scroll-margin-top: 2rem; }
+.contentSection p, .clinicPhotos p { max-width: 72ch; margin-bottom: 1rem; }
+.contentSection h2, .clinicPhotos h2 { font-family: Georgia, serif; line-height: 1.15; font-size: clamp(2rem, 4vw, 2.8rem); }
+.contentSection h3, .clinicPhotos h3 { color: var(--primary-blue); margin: 1.5rem 0 .75rem; }
+.sectionLabel { color: var(--accent-teal); margin-bottom: .6rem !important; }
+.contentSection ul { padding-left: 1.4rem; margin: 1rem 0; }
+.serviceList { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem 2rem; }
+.callout { background: #e4f0ed; border-left: 4px solid var(--accent-teal); padding: 1.5rem; margin-top: 2rem; }
+.callout h3 { margin-top: 0; }
+.photoGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.photoGrid img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; }
+@media (max-width: 768px) { .photoGrid, .serviceList { grid-template-columns: 1fr; } }

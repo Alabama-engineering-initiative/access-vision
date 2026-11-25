@@ -1,19 +1,17 @@
-import styles from "./about.module.css"
+import styles from "./about.module.css";
 
 export default function AboutUs() {
-
-    return (
-        <main>
-            <header className={styles.header}>
-                <h1>About Us</h1>
-            </header>
-            <div className={styles.aboutInfo}>
-                <h2>Our Story</h2>
-                <p> 
-                Access Vision is a nonprofit organization addressing critical gaps in eye care for low-income, uninsured and underinsured individuals across Alabama. Through a lean, volunteer-driven model, we provide comprehensive eye exams and prescription glasses at very low cost, making quality vision care accessible to those who need it most.
-                We proudly accept all major insurance carriers and work intentionally to keep out-of-pocket costs far below traditional, for-profit models. Importantly, no one is ever turned away due to an inability to pay. By operating independently while complementing existing health services, Access Vision ensures that cost, distance, and lack of coverage are never barriers to clear sight, confidence, and quality of life.
-                </p>
-            </div>
-        </main>
-    )
+  return (
+    <main>
+      <header className={styles.header}><p>About Access Vision</p><h1>Bringing Eye Care Closer to Home</h1></header>
+      <div className={styles.aboutInfo}>
+        <p>Access Vision Mobile Eye Clinic is an Alabama nonprofit dedicated to removing barriers to quality eye care. We believe that where you live, how much you earn, or whether you have health insurance should never determine your ability to see clearly.</p>
+        <p>Access Vision builds on years of experience in mobile eye care. Our leadership team includes individuals who helped establish Alabama&apos;s first mobile eye clinic. Their experience has shaped a proven approach to delivering professional, compassionate eye care in community-based settings.</p>
+        <p>We work alongside local healthcare providers, senior centers, nonprofit organizations, and other community partners to bring services into familiar, convenient locations. We focus on reaching communities where affordable, comprehensive eye care is limited or unavailable.</p>
+        <p>Our approach is simple: bring quality care to the people who need it, rather than expecting them to overcome barriers to reach us.</p>
+        <h2>Our Mission</h2><p>Our mission is to deliver high-quality, accessible, affordable eye care directly to underserved communities across Alabama.</p>
+        <h2>Our Vision</h2><p>We envision a world where no one&apos;s quality of life is limited by preventable vision loss, regardless of their location or circumstances.</p>
+      </div>
+    </main>
+  );
 }

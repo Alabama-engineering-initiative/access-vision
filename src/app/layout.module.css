@@ -1,76 +1,10 @@
-.header {
-	background-color: var(--primary-blue);
-	color: var(--white);
-	padding: 1rem 0;
-	position: sticky;
-	top: 0;
-	z-index: 1000;
-}
-
-.navContainer {
-	max-width: 1200px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 20px;
-}
-
-.logo {
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-decoration: none;
-	color: var(--white);
-}
-
-.nav ul {
-	list-style: none;
-	display: flex;
-	gap: 20px;
-}
-
-.nav li a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.nav li a:visited {
-    color: var(--white);
-	text-decoration: none;
-}
-
-.nav li {
-    display: flex;
-	text-decoration: none;
-    flex-direction: column; 
-    align-items: flex-start; 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-
-.footer {
-	background-color: var(--primary-blue);
-	color: var(--white);
-	text-align: center;
-	padding: 2rem;
-	margin-top: 4rem;
-}
-
-.nonProfitBadge {
-	display: inline-block;
-	border: 1px solid var(--white);
-	padding: 5px 15px;
-	margin-top: 10px;
-	font-size: 0.9rem;
-	border-radius: 20px;
-}
-
-@media (max-width: 768px) {
-	.navContainer {
-		flex-direction: column;
-		gap: 10px;
-	}
-}
+.header { background: var(--primary-blue); color: white; padding: 1rem 0; }
+.navContainer { max-width: 1400px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 0 20px; }
+.logo, .logo:visited { color: white; text-decoration: none; font-size: 1.4rem; font-weight: 700; line-height: 1.15; flex-shrink: 0; }
+.logo span { display: block; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; margin-top: .25rem; }
+.nav ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .5rem 1rem; }
+.nav a, .nav a:visited { color: white; text-decoration: none; font-size: .9rem; font-weight: 600; }
+.nav a:hover, .nav a:focus-visible { text-decoration: underline; }
+.footer { background: var(--primary-blue); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+.nonProfitBadge { display: inline-block; border: 1px solid white; padding: 5px 15px; margin-top: 10px; font-size: .9rem; border-radius: 20px; }
+@media (max-width: 900px) { .navContainer { flex-direction: column; align-items: flex-start; } .nav ul { justify-content: flex-start; } }
