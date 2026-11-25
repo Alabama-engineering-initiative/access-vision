@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: '/access-vision',
   /* config options here */
   reactCompiler: true,
   output: 'export',

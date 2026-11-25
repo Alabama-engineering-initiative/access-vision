@@ -76,7 +76,7 @@ export default function Home() {
           Vision & Mission
         </h3>
         <p>
-          We envision a world where no one's quality of life is limited by preventable vision loss, regardless of their location or circumstances.
+          We envision a world where no one&apos;s quality of life is limited by preventable vision loss, regardless of their location or circumstances.
         </p>
         <p>
           Our mission is to deliver high-quality, accessible, affordable eye care directly to underserved communities across Alabama.
