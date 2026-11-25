@@ -62,9 +62,9 @@ export default function Home() {
         <p>At Access Vision, we see firsthand what a difference accessible eye care can make.</p>
         <h3>Care in our communities</h3>
         <div className={styles.photoGrid}>
-          <Image src="/access-vision/photos/eye-exam.jpg" width={1200} height={1200} alt="An eye doctor performs an examination with a slit lamp." />
-          <Image src="/access-vision/photos/vision-check.jpg" width={1200} height={1016} alt="An eye doctor sits with a patient during a vision exam." />
-          <Image src="/access-vision/photos/community-clinic.jpg" width={1200} height={903} alt="A patient takes a vision test at a mobile eye clinic." />
+          <Image src="/photos/eye-exam.jpg" width={1200} height={1200} alt="An eye doctor performs an examination with a slit lamp." />
+          <Image src="/photos/vision-check.jpg" width={1200} height={1016} alt="An eye doctor sits with a patient during a vision exam." />
+          <Image src="/photos/community-clinic.jpg" width={1200} height={903} alt="A patient takes a vision test at a mobile eye clinic." />
         </div>
       </section>
 
